@@ -1,0 +1,10 @@
+{
+    "cmake.sourceDirectory": "/home/marius/rg_ws/src/rg_bringup",
+    "ros.distro": "jazzy",
+    "python.autoComplete.extraPaths": [
+        "/opt/ros/jazzy/lib/python3.12/site-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/opt/ros/jazzy/lib/python3.12/site-packages"
+    ]
+}

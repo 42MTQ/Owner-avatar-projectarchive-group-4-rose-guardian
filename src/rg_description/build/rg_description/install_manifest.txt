@@ -1,0 +1,15 @@
+/home/marius/rg_ws/rg_description/install/rg_description/share/ament_index/resource_index/package_run_dependencies/rg_description
+/home/marius/rg_ws/rg_description/install/rg_description/share/ament_index/resource_index/parent_prefix_path/rg_description
+/home/marius/rg_ws/rg_description/install/rg_description/share/rg_description/environment/ament_prefix_path.sh
+/home/marius/rg_ws/rg_description/install/rg_description/share/rg_description/environment/ament_prefix_path.dsv
+/home/marius/rg_ws/rg_description/install/rg_description/share/rg_description/environment/path.sh
+/home/marius/rg_ws/rg_description/install/rg_description/share/rg_description/environment/path.dsv
+/home/marius/rg_ws/rg_description/install/rg_description/share/rg_description/local_setup.bash
+/home/marius/rg_ws/rg_description/install/rg_description/share/rg_description/local_setup.sh
+/home/marius/rg_ws/rg_description/install/rg_description/share/rg_description/local_setup.zsh
+/home/marius/rg_ws/rg_description/install/rg_description/share/rg_description/local_setup.dsv
+/home/marius/rg_ws/rg_description/install/rg_description/share/rg_description/package.dsv
+/home/marius/rg_ws/rg_description/install/rg_description/share/ament_index/resource_index/packages/rg_description
+/home/marius/rg_ws/rg_description/install/rg_description/share/rg_description/cmake/rg_descriptionConfig.cmake
+/home/marius/rg_ws/rg_description/install/rg_description/share/rg_description/cmake/rg_descriptionConfig-version.cmake
+/home/marius/rg_ws/rg_description/install/rg_description/share/rg_description/package.xml

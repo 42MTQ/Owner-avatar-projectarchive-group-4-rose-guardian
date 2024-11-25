@@ -1,0 +1,16 @@
+/home/marius/rg_ws/src/rg_bringup/install/rg_bringup/share//launch/rg.rviz.launch.py
+/home/marius/rg_ws/src/rg_bringup/install/rg_bringup/share/ament_index/resource_index/package_run_dependencies/rg_bringup
+/home/marius/rg_ws/src/rg_bringup/install/rg_bringup/share/ament_index/resource_index/parent_prefix_path/rg_bringup
+/home/marius/rg_ws/src/rg_bringup/install/rg_bringup/share/rg_bringup/environment/ament_prefix_path.sh
+/home/marius/rg_ws/src/rg_bringup/install/rg_bringup/share/rg_bringup/environment/ament_prefix_path.dsv
+/home/marius/rg_ws/src/rg_bringup/install/rg_bringup/share/rg_bringup/environment/path.sh
+/home/marius/rg_ws/src/rg_bringup/install/rg_bringup/share/rg_bringup/environment/path.dsv
+/home/marius/rg_ws/src/rg_bringup/install/rg_bringup/share/rg_bringup/local_setup.bash
+/home/marius/rg_ws/src/rg_bringup/install/rg_bringup/share/rg_bringup/local_setup.sh
+/home/marius/rg_ws/src/rg_bringup/install/rg_bringup/share/rg_bringup/local_setup.zsh
+/home/marius/rg_ws/src/rg_bringup/install/rg_bringup/share/rg_bringup/local_setup.dsv
+/home/marius/rg_ws/src/rg_bringup/install/rg_bringup/share/rg_bringup/package.dsv
+/home/marius/rg_ws/src/rg_bringup/install/rg_bringup/share/ament_index/resource_index/packages/rg_bringup
+/home/marius/rg_ws/src/rg_bringup/install/rg_bringup/share/rg_bringup/cmake/rg_bringupConfig.cmake
+/home/marius/rg_ws/src/rg_bringup/install/rg_bringup/share/rg_bringup/cmake/rg_bringupConfig-version.cmake
+/home/marius/rg_ws/src/rg_bringup/install/rg_bringup/share/rg_bringup/package.xml

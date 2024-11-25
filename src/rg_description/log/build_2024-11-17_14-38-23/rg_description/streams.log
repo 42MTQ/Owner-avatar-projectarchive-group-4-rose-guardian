@@ -1,0 +1,47 @@
+[0.019s] Invoking command in '/home/marius/rg_ws/rg_description/build/rg_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/marius/rg_ws/rg_description -DCMAKE_INSTALL_PREFIX=/home/marius/rg_ws/rg_description/install/rg_description
+[0.256s] -- The C compiler identification is GNU 13.2.0
+[0.440s] -- The CXX compiler identification is GNU 13.2.0
+[0.477s] -- Detecting C compiler ABI info
+[0.653s] -- Detecting C compiler ABI info - done
+[0.682s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.683s] -- Detecting C compile features
+[0.685s] -- Detecting C compile features - done
+[0.710s] -- Detecting CXX compiler ABI info
+[0.940s] -- Detecting CXX compiler ABI info - done
+[0.973s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.973s] -- Detecting CXX compile features
+[0.975s] -- Detecting CXX compile features - done
+[0.992s] -- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.291s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.558s] -- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[1.811s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.812s] -- Configured cppcheck include dirs: 
+[1.812s] -- Configured cppcheck exclude dirs and/or files: 
+[1.818s] -- Added test 'lint_cmake' to check CMake code style
+[1.839s] -- Added test 'uncrustify' to check C / C++ code style
+[1.839s] -- Configured uncrustify additional arguments: 
+[1.844s] -- Added test 'xmllint' to check XML markup files
+[1.849s] -- Configuring done (1.8s)
+[1.856s] -- Generating done (0.0s)
+[1.858s] -- Build files have been written to: /home/marius/rg_ws/rg_description/build/rg_description
+[1.867s] Invoked command in '/home/marius/rg_ws/rg_description/build/rg_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/marius/rg_ws/rg_description -DCMAKE_INSTALL_PREFIX=/home/marius/rg_ws/rg_description/install/rg_description
+[1.870s] Invoking command in '/home/marius/rg_ws/rg_description/build/rg_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/marius/rg_ws/rg_description/build/rg_description -- -j8 -l8
+[1.955s] Invoked command in '/home/marius/rg_ws/rg_description/build/rg_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/marius/rg_ws/rg_description/build/rg_description -- -j8 -l8
+[2.019s] Invoking command in '/home/marius/rg_ws/rg_description/build/rg_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/marius/rg_ws/rg_description/build/rg_description
+[2.034s] -- Install configuration: ""
+[2.034s] -- Installing: /home/marius/rg_ws/rg_description/install/rg_description/share/ament_index/resource_index/package_run_dependencies/rg_description
+[2.034s] -- Installing: /home/marius/rg_ws/rg_description/install/rg_description/share/ament_index/resource_index/parent_prefix_path/rg_description
+[2.035s] -- Installing: /home/marius/rg_ws/rg_description/install/rg_description/share/rg_description/environment/ament_prefix_path.sh
+[2.035s] -- Installing: /home/marius/rg_ws/rg_description/install/rg_description/share/rg_description/environment/ament_prefix_path.dsv
+[2.036s] -- Installing: /home/marius/rg_ws/rg_description/install/rg_description/share/rg_description/environment/path.sh
+[2.036s] -- Installing: /home/marius/rg_ws/rg_description/install/rg_description/share/rg_description/environment/path.dsv
+[2.036s] -- Installing: /home/marius/rg_ws/rg_description/install/rg_description/share/rg_description/local_setup.bash
+[2.036s] -- Installing: /home/marius/rg_ws/rg_description/install/rg_description/share/rg_description/local_setup.sh
+[2.036s] -- Installing: /home/marius/rg_ws/rg_description/install/rg_description/share/rg_description/local_setup.zsh
+[2.037s] -- Installing: /home/marius/rg_ws/rg_description/install/rg_description/share/rg_description/local_setup.dsv
+[2.037s] -- Installing: /home/marius/rg_ws/rg_description/install/rg_description/share/rg_description/package.dsv
+[2.037s] -- Installing: /home/marius/rg_ws/rg_description/install/rg_description/share/ament_index/resource_index/packages/rg_description
+[2.038s] -- Installing: /home/marius/rg_ws/rg_description/install/rg_description/share/rg_description/cmake/rg_descriptionConfig.cmake
+[2.038s] -- Installing: /home/marius/rg_ws/rg_description/install/rg_description/share/rg_description/cmake/rg_descriptionConfig-version.cmake
+[2.038s] -- Installing: /home/marius/rg_ws/rg_description/install/rg_description/share/rg_description/package.xml
+[2.042s] Invoked command in '/home/marius/rg_ws/rg_description/build/rg_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/marius/rg_ws/rg_description/build/rg_description
