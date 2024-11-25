@@ -17,17 +17,6 @@ find_package(robot_state_publisher REQUIRED)  # Needed for publishing URDF in RV
 # find_package(<dependency> REQUIRED)
 
 # Add your launch file directory to CMake install process
-install(DIRECTORY launch/
-  DESTINATION share/${PROJECT_NAME}/launch
-)
-
-# Install urdf and rviz directories (optional)
-install(DIRECTORY urdf/
-  DESTINATION share/${PROJECT_NAME}/urdf
-)
-install(DIRECTORY rviz/
-  DESTINATION share/${PROJECT_NAME}/rviz
-)
 
 # Handle testing and linting if enabled
 if(BUILD_TESTING)
