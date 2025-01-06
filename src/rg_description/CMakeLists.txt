@@ -26,5 +26,10 @@ endif()
 
 # Add package-specific installation commands here if needed
 
+install(  
+  DIRECTORY meshes  
+  DESTINATION share/${PROJECT\_NAME}  
+)  
+
 # Declare the package to be managed by ament
 ament_package()

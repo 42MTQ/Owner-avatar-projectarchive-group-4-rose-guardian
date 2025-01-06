@@ -24,7 +24,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rg_description/src/meshes/base_link.STL" />
+          filename="package://rg_description/meshes/base_link.STL" />
       </geometry>
       <material
         name="">
@@ -38,7 +38,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rg_description/src/meshes/base_link.STL" />
+          filename="package://rg_description/meshes/base_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -64,7 +64,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rg_description/src/meshes/left_leg.STL" />
+          filename="package://rg_description/meshes/left_leg.STL" />
       </geometry>
       <material
         name="">
@@ -78,7 +78,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rg_description/src/meshes/left_leg.STL" />
+          filename="package://rg_description/meshes/left_leg.STL" />
       </geometry>
     </collision>
   </link>
@@ -117,7 +117,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rg_description/src/meshes/left_fron_motor.STL" />
+          filename="package://rg_description/meshes/left_fron_motor.STL" />
       </geometry>
       <material
         name="">
@@ -131,7 +131,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rg_description/src/meshes/left_fron_motor.STL" />
+          filename="package://rg_description/meshes/left_fron_motor.STL" />
       </geometry>
     </collision>
   </link>
@@ -170,7 +170,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rg_description/src/meshes/left_fron_wheel.STL" />
+          filename="package://rg_description/meshes/left_fron_wheel.STL" />
       </geometry>
       <material
         name="">
@@ -184,7 +184,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rg_description/src/meshes/left_fron_wheel.STL" />
+          filename="package://rg_description/meshes/left_fron_wheel.STL" />
       </geometry>
     </collision>
   </link>
@@ -223,7 +223,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rg_description/src/meshes/left_back_u.STL" />
+          filename="package://rg_description/meshes/left_back_u.STL" />
       </geometry>
       <material
         name="">
@@ -237,7 +237,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rg_description/src/meshes/left_back_u.STL" />
+          filename="package://rg_description/meshes/left_back_u.STL" />
       </geometry>
     </collision>
   </link>
@@ -276,7 +276,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rg_description/src/meshes/left_back_wheel.STL" />
+          filename="package://rg_description/meshes/left_back_wheel.STL" />
       </geometry>
       <material
         name="">
@@ -290,7 +290,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rg_description/src/meshes/left_back_wheel.STL" />
+          filename="package://rg_description/meshes/left_back_wheel.STL" />
       </geometry>
     </collision>
   </link>
@@ -332,7 +332,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rg_description/src/meshes/right_leg.STL" />
+          filename="package://rg_description/meshes/right_leg.STL" />
       </geometry>
       <material
         name="">
@@ -346,7 +346,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rg_description/src/meshes/right_leg.STL" />
+          filename="package://rg_description/meshes/right_leg.STL" />
       </geometry>
     </collision>
   </link>
@@ -385,7 +385,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rg_description/src/meshes/right_front_motor.STL" />
+          filename="package://rg_description/meshes/right_front_motor.STL" />
       </geometry>
       <material
         name="">
@@ -399,7 +399,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rg_description/src/meshes/right_front_motor.STL" />
+          filename="package://rg_description/meshes/right_front_motor.STL" />
       </geometry>
     </collision>
   </link>
@@ -438,7 +438,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rg_description/src/meshes/right_front_wheel.STL" />
+          filename="package://rg_description/meshes/right_front_wheel.STL" />
       </geometry>
       <material
         name="">
@@ -452,7 +452,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rg_description/src/meshes/right_front_wheel.STL" />
+          filename="package://rg_description/meshes/right_front_wheel.STL" />
       </geometry>
     </collision>
   </link>
@@ -491,7 +491,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rg_description/src/meshes/right_back_u.STL" />
+          filename="package://rg_description/meshes/right_back_u.STL" />
       </geometry>
       <material
         name="">
@@ -505,7 +505,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rg_description/src/meshes/right_back_u.STL" />
+          filename="package://rg_description/meshes/right_back_u.STL" />
       </geometry>
     </collision>
   </link>
@@ -544,7 +544,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rg_description/src/meshes/right_back_wheel.STL" />
+          filename="package://rg_description/meshes/right_back_wheel.STL" />
       </geometry>
       <material
         name="">
@@ -558,7 +558,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rg_description/src/meshes/right_back_wheel.STL" />
+          filename="package://rg_description/meshes/right_back_wheel.STL" />
       </geometry>
     </collision>
   </link>
@@ -639,7 +639,7 @@
         <visual>
             <origin xyz="0 0 0" rpy="0 0 0"/>
             <geometry>
-                <mesh filename="package://rg_description/src/meshes/ZED.stl" />
+                <mesh filename="package://rg_description/meshes/ZED.stl" />
             </geometry>
             <material name="light_grey">
                 <color rgba="0.8 0.8 0.8 0.8"/>
