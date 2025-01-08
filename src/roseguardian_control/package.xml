@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>roseguardian_control</name>
+  <version>1.0.0</version>
+  <description>
+    <p>URDF Description package for roseguardian_control</p>
+    <p>This package contains configuration data, 3D models, and launch files
+    for the roseguardian_control robot.</p>
+  </description>
+  <author>Marius Thimm</author>
+  <maintainer email="mv.thimm@gmail.com">Marius Thimm</maintainer>
+  <license>BSD</license>
+
+  <!-- Build dependencies -->
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <build_depend>robot_state_publisher</build_depend>
+  <build_depend>joint_state_publisher_gui</build_depend> <!-- Changed this line for ROS 2 -->
+
+  <!-- Runtime dependencies -->
+  <exec_depend>robot_state_publisher</exec_depend>
+  <exec_depend>joint_state_publisher_gui</exec_depend> <!-- Changed this line for ROS 2 -->
+  <exec_depend>rviz2</exec_depend>
+  <exec_depend>gazebo_ros_pkgs</exec_depend>
+
+  <!-- Export package info -->
+  <export>
+    <architecture_independent/>
+  </export>
+</package>

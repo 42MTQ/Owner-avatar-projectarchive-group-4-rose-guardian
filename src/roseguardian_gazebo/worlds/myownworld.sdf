@@ -1,0 +1,318 @@
+<sdf version='1.10'>
+  <world name='default'>
+    <gravity>0 0 -9.8000000000000007</gravity>
+    <magnetic_field>5.5644999999999998e-06 2.2875799999999999e-05 -4.2388400000000002e-05</magnetic_field>
+    <atmosphere type='adiabatic'/>
+    <physics type='ode'>
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1</real_time_factor>
+      <real_time_update_rate>1000</real_time_update_rate>
+    </physics>
+    <scene>
+      <ambient>0.400000006 0.400000006 0.400000006 1</ambient>
+      <background>0.699999988 0.699999988 0.699999988 1</background>
+      <shadows>true</shadows>
+    </scene>
+    <include>
+<uri>
+https://fuel.gazebosim.org/1.0/OpenRobotics/models/Mud Box
+</uri>
+</include>
+
+    <model name='ground_plane'>
+      <static>true</static>
+      <link name='link'>
+        <collision name='collision'>  
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>100 100</size>
+            </plane>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>50</mu2>
+              </ode>
+            </friction>
+            <bounce/>
+            <contact/>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <cast_shadows>false</cast_shadows>
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>100 100</size>
+            </plane>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Grey</name>
+            </script>
+          </material>
+        </visual>
+        <pose>0 0 0 0 0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <pose>0 0 0 0 0 0</pose>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='row_3'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/big_plant/mesh/big_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/big_plant/mesh/big_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>-5.0226149295940994 0.00025281415071725153 -0.0020179167519157005 -0.029754255418157915 -0.10039824494826481 0.0022368510842025713</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='big_plant_4'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/big_plant/mesh/big_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/big_plant/mesh/big_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>-1.0040960398066983 0.017714331517757725 -0.0020174665962399206 -0.029754255432428833 -0.10039824495064884 0.002190822213091765</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='big_plant'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/big_plant/mesh/big_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/big_plant/mesh/big_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+        <pose>0 0 0 0 0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <pose>0.032769709996022911 -0.00022748299931971139 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='big_plant_5'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/big_plant/mesh/big_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/big_plant/mesh/big_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>-1.0301226872214182 -0.0028167718204010275 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='big_plant_6'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/big_plant/mesh/big_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/big_plant/mesh/big_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>-1.9824381436614367 0.010366475687463406 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='big_plant_7'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/big_plant/mesh/big_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/big_plant/mesh/big_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>0.96503263915996929 -0.012142531827139702 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='big_plant_8'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/big_plant/mesh/big_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/big_plant/mesh/big_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>1.9208088751501453 -0.0079282273669636361 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='big_plant_9'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/big_plant/mesh/big_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/big_plant/mesh/big_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>2.9649797494681911 0.0086347074073931385 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='big_plant_10'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/big_plant/mesh/big_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/big_plant/mesh/big_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>-2.9911251046473288 0.021412136564922607 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <light name='row_1' type='directional'>
+      <pose>0 0 0 0 0 0</pose>
+      <cast_shadows>true</cast_shadows>
+      <intensity>1</intensity>
+      <direction>-0.5 0.10000000000000001 -0.90000000000000002</direction>
+      <diffuse>0.800000012 0.800000012 0.800000012 1</diffuse>
+      <specular>0.200000003 0.200000003 0.200000003 1</specular>
+      <attenuation>
+        <range>1000</range>
+        <linear>0.0099999997764825821</linear>
+        <constant>0.89999997615814209</constant>
+        <quadratic>0.0010000000474974513</quadratic>
+      </attenuation>
+      <spot>
+        <inner_angle>0</inner_angle>
+        <outer_angle>0</outer_angle>
+        <falloff>0</falloff>
+      </spot>
+    </light>
+    <light name='sun' type='directional'>
+      <pose>0 0 10 0 0 0</pose>
+      <cast_shadows>true</cast_shadows>
+      <intensity>1</intensity>
+      <direction>-0.5 0.10000000000000001 -0.90000000000000002</direction>
+      <diffuse>0.800000012 0.800000012 0.800000012 1</diffuse>
+      <specular>0.200000003 0.200000003 0.200000003 1</specular>
+      <attenuation>
+        <range>1000</range>
+        <linear>0.0099999997764825821</linear>
+        <constant>0.89999997615814209</constant>
+        <quadratic>0.0010000000474974513</quadratic>
+      </attenuation>
+      <spot>
+        <inner_angle>0</inner_angle>
+        <outer_angle>0</outer_angle>
+        <falloff>0</falloff>
+      </spot>
+    </light>
+  </world>
+</sdf>

@@ -9,15 +9,12 @@ import os
 def generate_launch_description():
     
     rg_description_path = get_package_share_directory('rg_description')
-    
-    
     robot_description_path = os.path.join(rg_description_path, 'URDF', 'roseguardian.URDF')
 
     return LaunchDescription([
        
         DeclareLaunchArgument('robot_description', default_value=robot_description_path, description="Path to the URDF file"),
 
-       
         Node(
             package='robot_state_publisher',
             executable='robot_state_publisher',
@@ -26,7 +23,6 @@ def generate_launch_description():
             parameters=[{'robot_description': LaunchConfiguration('robot_description')}]
         ),
 
-        
         Node(
             package='joint_state_publisher',
             executable='joint_state_publisher',
@@ -34,12 +30,11 @@ def generate_launch_description():
             output='screen'
         ),
 
-        
+        # Removed RViz configuration specification; RViz will use default settings
         Node(
             package='rviz2',
             executable='rviz2',
             name='rviz',
-            output='screen',
-            arguments=['-d', os.path.join(rg_description_path, 'rviz', 'robot.rviz')]
+            output='screen'
         ),
     ])

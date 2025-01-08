@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+
+  <!-- Load the URDF into the ROS Parameter Server -->
+ 
+
+  <!-- Show in Rviz   -->
+  <!-- <node name="rviz" pkg="rviz" type="rviz"/> -->
+
+  <!-- Include gazebo launch file rrbot_world.launch -->
+  <include file="$(find roseguardian_gazebo)/launch/roseguardian_sb_farm.launch">
+  </include>
+ 
+
+  <!-- Include ros_control launch file to load joint position controllers -->
+  <include file="$(find roseguardian_control)/launch/roseguardian_control.launch" />
+  <include file="$(find roseguardian_base_controller)/launch/roseguardian_base_controller.launch" />
+
+  <include file="$(find roseguardian_joystick)/launch/roseguardian_joystick.launch" />
+
+
+
+</launch>

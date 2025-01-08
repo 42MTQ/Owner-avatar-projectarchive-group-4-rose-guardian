@@ -1,0 +1,2672 @@
+<sdf version='1.10'>
+  <world name='default'>
+    <gravity>0 0 -9.8000000000000007</gravity>
+    <magnetic_field>5.5644999999999998e-06 2.2875799999999999e-05 -4.2388400000000002e-05</magnetic_field>
+    <atmosphere type='adiabatic'/>
+    <physics type='ode'>
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1</real_time_factor>
+      <real_time_update_rate>1000</real_time_update_rate>
+    </physics>
+    <scene>
+      <ambient>0.400000006 0.400000006 0.400000006 1</ambient>
+      <background>0.699999988 0.699999988 0.699999988 1</background>
+      <shadows>true</shadows>
+    </scene>
+    <model name='ground_plane'>
+      <static>true</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>100 100</size>
+            </plane>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>50</mu2>
+              </ode>
+            </friction>
+            <bounce/>
+            <contact/>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <cast_shadows>false</cast_shadows>
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>100 100</size>
+            </plane>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Grey</name>
+            </script>
+          </material>
+        </visual>
+        <pose>0 0 0 0 0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <pose>0 0 0 0 0 0</pose>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='row_3'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/big_plant/mesh/big_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/big_plant/mesh/big_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>-5.0226149295940994 0.00025281415071725153 -0.0020179167519157005 -0.029754255418157915 -0.10039824494826481 0.0022368510842025713</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='big_plant_4'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/big_plant/mesh/big_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/big_plant/mesh/big_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>-1.0040960398066983 0.017714331517757725 -0.0020174665962399206 -0.029754255432428833 -0.10039824495064884 0.002190822213091765</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='big_plant'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/big_plant/mesh/big_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/big_plant/mesh/big_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+        <pose>0 0 0 0 0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <pose>0.032769709996022911 -0.00022748299931971139 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='big_plant_5'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/big_plant/mesh/big_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/big_plant/mesh/big_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>-1.0301226872214182 -0.0028167718204010275 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='big_plant_6'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/big_plant/mesh/big_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/big_plant/mesh/big_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>-1.9824381436614367 0.010366475687463406 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='big_plant_7'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/big_plant/mesh/big_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/big_plant/mesh/big_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>0.96503263915996929 -0.012142531827139702 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='big_plant_8'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/big_plant/mesh/big_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/big_plant/mesh/big_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>1.9208088751501453 -0.0079282273669636361 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='big_plant_9'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/big_plant/mesh/big_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/big_plant/mesh/big_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>2.9649797494681911 0.0086347074073931385 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='big_plant_10'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/big_plant/mesh/big_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/big_plant/mesh/big_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>-2.9911251046473288 0.021412136564922607 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='big_plant_11'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/big_plant/mesh/big_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/big_plant/mesh/big_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>-4.002446279672224 0.028813344329933488 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+        <pose>0 0 0 0 0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <pose>-2.234622419812248 -0.12839094127334483 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_4'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>-2.2460341917592586 0.10201555860857686 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_5'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>-1.7138079455822433 0.22770394846020509 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_6'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>-2.0528443196435724 0.25547868748887781 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_7'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>-1.901540314532828 -0.25114958650407859 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_8'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>-1.1523945138033018 -0.2805917709995992 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_9'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>-1.204168372729078 0.057077715248002009 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_10'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>-1.0892301589890319 0.21966169002700037 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_11'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>-0.92162617562547666 0.25863919770323113 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_12'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>-0.76659825949013172 0.15850471610925032 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_13'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>-0.85723942590274138 -0.20343356785230815 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_14'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>-0.63178213390754578 -0.10154926405344916 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_15'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>-0.16430393381795394 -0.1564740798541511 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_16'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>-0.2607343180371009 -0.010673210552293533 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_17'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>-0.15191620804016104 0.24919332835414887 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_18'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>0.29068155509804416 0.37914311497008191 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_19'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>0.080949864161917962 0.40178034677342755 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_20'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>0.4214638721497459 0.18678746069761321 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_21'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>0.43845443412119733 -0.0023139888380691587 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_22'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>0.3714398799119154 -0.25004106676223381 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_23'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>0.095225923778913035 -0.25954447833397948 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_24'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>0.22085020712171755 -0.23364433869002715 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_25'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>-0.022457155371450988 -0.2659496455247099 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_26'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>-0.67307144038749356 0.29692587588252328 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_27'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>-0.45957361004486152 0.30160491347840013 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_28'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>-0.41740582286732808 -0.0010405323170912251 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_29'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>-0.45438683126355794 -0.35135133612693104 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_30'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>0.54318365862942519 -0.32438154891727933 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_31'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>1.2296604754185188 -0.34880450800869789 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_32'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>1.3794023056671616 0.039871147403385321 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_33'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>1.1704981642526211 0.31565090223142622 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_34'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>1.3036204622762608 0.24164360145101915 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_35'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>1.0894741601758304 0.28177823023294701 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_36'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>0.88268368622030646 0.38408824611552761 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_37'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>0.89302338353665123 0.29066544325699006 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_38'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>0.77095044070785068 0.16568093111277787 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_39'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>0.73154087754817843 0.37170114813931643 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_40'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>0.76096144680378286 0.27855885323722329 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_41'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>0.66434162854443723 0.0057738825193086041 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_42'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>0.62692297485395665 0.16095541243383471 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_43'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>0.59001555553389506 0.26652603319203316 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_44'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>0.53616554695130425 0.35717052393201698 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_45'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>0.60847891179837799 -0.082058104902474172 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_46'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>0.66434183865911445 -0.27555204413822931 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_47'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>1.2164552930490391 -0.19403945725949753 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_48'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>1.0002022751243245 -0.40453203491183959 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_49'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>0.75273954107031305 -0.40434169643068119 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_50'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>-4.305515874342059 0.15903707930172534 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_51'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>-4.2564045513448923 -0.11184596887891241 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_52'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>-4.108545804474832 -0.15425113898457682 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_53'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>-4.088788121132974 0.24878023309174357 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_54'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>-3.9088371899021555 0.28834543330858459 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_55'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>-3.7456946958691155 0.37382084421229 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_56'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>-3.7090907955139345 0.19862877339428328 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_57'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>-3.6523393826501689 -0.014023580573312766 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_58'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>-3.6570557024856534 -0.17100901600496554 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_59'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>-3.9054023263364988 -0.21682106517340172 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_60'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>-3.4779191343601901 0.12373822346427805 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_61'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>-3.2041517928337195 0.10141572869210112 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_62'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>-3.194434563086284 -0.048258176656752194 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_63'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>-3.0291258907520859 -0.19284252065937213 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_64'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>-2.6502756246286792 0.1869258147687628 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_65'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>-2.9045158545348566 0.25878831831767685 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_66'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>-3.2473763110587601 0.32759035323915997 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_67'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>-3.4539437351851108 0.45679962019404768 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_68'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>-3.4981364015112231 0.27451750057377849 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_69'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>-3.403740854850775 -0.042626103520753217 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_70'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>-3.3297993223259761 -0.22132989369488537 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_71'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>-2.7372612339708571 -0.21423643100534451 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_72'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>-2.5591288746672598 -0.077091173278615782 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_73'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>-2.3855921232705346 0.084627926105954765 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_74'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>-2.3048422515368499 0.24473527569158821 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_75'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>-2.4247167378324179 -0.30046808103279837 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_76'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>-1.4319576972359278 -0.041864214440220149 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_77'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>-1.6615349170643414 -0.31266757878919704 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_78'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>-1.4772801553468073 0.16460703371488689 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_79'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>-1.3358780228878278 0.2582565554477283 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_80'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>-1.4122780472018102 -0.2757049894697311 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_81'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>-0.6982235400397272 -0.34977194099875697 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_82'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>1.4985419595956602 0.23893490919222393 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_83'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>1.9748282993072559 0.21772808522381568 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_84'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>1.8890182951886496 0.30462903545066067 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_85'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>2.2020890062814669 0.27195092153301237 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_86'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>2.2498043014980507 0.13031682409437531 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_87'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>2.4323072626837101 -0.022559912672121374 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_88'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>2.4144529381408022 -0.18438878600400904 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_89'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>2.1717058625846635 -0.26112288938046602 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_90'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>1.9203861789934651 -0.32948590780189002 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_91'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>1.6398424918478418 -0.21066336404871111 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_92'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>1.5771395412421718 -0.34530916554732927 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_93'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>1.4570583748654111 -0.18267837541135512 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_94'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>1.5405961522882903 0.3914600048709781 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_95'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>1.8369184569106363 0.45514904114654797 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_96'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>2.1104742765054079 0.46872622705754285 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_97'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>2.5704997641835501 0.37215989255084714 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_98'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>2.9098024028128124 0.35119005718992241 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_99'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>2.6244654402880858 0.22180198084961592 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_100'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>2.6609656990576562 -0.1587191572013294 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_101'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>2.8114712368709638 -0.28482639757670047 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_102'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>3.1790057442657353 -0.24983719533419529 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_103'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>3.3339502888964896 -0.20723362569984305 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_104'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>3.4026255065662951 -0.11063788063528632 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_105'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>3.4260832990894032 0.054335000176776393 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_106'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>3.449326634057492 0.14575512224978396 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_107'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>3.3797000200651759 0.30050416392683937 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_108'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>2.9703291590139171 0.23694894698628813 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_109'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>3.794603224742171 -0.11806927713029045 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_110'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>3.6425368985758206 -0.22614674817292069 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_111'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>3.0937778687683739 -0.3407197229536128 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_plant_112'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/marius/rg_ws/src/roseguardian_gazebo/models/small_plant/mesh/small_plant.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <pose>2.5186048114998272 -0.31587001778488666 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <include>
+      <uri>file:///home/marius/.gz/fuel/fuel.gazebosim.org/openrobotics/models/mud box/3</uri>
+      <name>mud_box</name>
+      <pose>0.01 -0.13 -1 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/marius/.gz/fuel/fuel.gazebosim.org/openrobotics/models/pine tree/6</uri>
+      <name>Pine Tree</name>
+      <pose>2.7199890704755685 1.1472814509708131 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/marius/.gz/fuel/fuel.gazebosim.org/openrobotics/models/warehouse robot/3</uri>
+      <name>warehouse_robot</name>
+      <pose>-5.7848138117988723 -0.071419918224241652 0 0 0 0</pose>
+    </include>
+    <light name='row_1' type='directional'>
+      <pose>0 0 0 0 0 0</pose>
+      <cast_shadows>true</cast_shadows>
+      <intensity>1</intensity>
+      <direction>-0.5 0.10000000000000001 -0.90000000000000002</direction>
+      <diffuse>0.800000012 0.800000012 0.800000012 1</diffuse>
+      <specular>0.200000003 0.200000003 0.200000003 1</specular>
+      <attenuation>
+        <range>1000</range>
+        <linear>0.0099999997764825821</linear>
+        <constant>0.89999997615814209</constant>
+        <quadratic>0.0010000000474974513</quadratic>
+      </attenuation>
+      <spot>
+        <inner_angle>0</inner_angle>
+        <outer_angle>0</outer_angle>
+        <falloff>0</falloff>
+      </spot>
+    </light>
+    <light name='sun' type='directional'>
+      <pose>0 0 10 0 0 0</pose>
+      <cast_shadows>true</cast_shadows>
+      <intensity>1</intensity>
+      <direction>-0.5 0.10000000000000001 -0.90000000000000002</direction>
+      <diffuse>0.800000012 0.800000012 0.800000012 1</diffuse>
+      <specular>0.200000003 0.200000003 0.200000003 1</specular>
+      <attenuation>
+        <range>1000</range>
+        <linear>0.0099999997764825821</linear>
+        <constant>0.89999997615814209</constant>
+        <quadratic>0.0010000000474974513</quadratic>
+      </attenuation>
+      <spot>
+        <inner_angle>0</inner_angle>
+        <outer_angle>0</outer_angle>
+        <falloff>0</falloff>
+      </spot>
+    </light>
+  </world>
+</sdf>
